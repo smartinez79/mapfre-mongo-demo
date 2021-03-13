@@ -72,7 +72,7 @@ public class PersonService {
         return personMapper.toDto(savedModel);
     }
 
-    public PersonDto updatePerson(PersonDto personDto) {
+    public PersonDto updatePerson(String id, PersonDto personDto) {
         // TODO: Replace by a method in MongoPersonRepository to find a person by id
         Optional<Person> model = Optional.empty();
         return model
